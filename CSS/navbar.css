@@ -23,8 +23,8 @@
 .nav-links {
     display: flex;
     list-style: none;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0; 
+    padding: 0; 
 }
 
 .nav-links li {
@@ -36,8 +36,8 @@
     color: var(--text);
     font-weight: 500;
     transition: color 0.3s;
-    padding: 0.5rem 0; /* Add padding for better click area */
-    display: block; /* Make the whole padding area clickable */
+    padding: 0.5rem 0; 
+    display: block; 
 }
 
 .nav-links a:hover,
@@ -46,9 +46,9 @@
 }
 
 .hamburger {
-    display: none;
+    display: none; /* Hidden by default for larger screens */
     cursor: pointer;
-    padding: 10px; /* Increase hit area */
+    padding: 10px; 
 }
 
 .hamburger .line {
@@ -75,7 +75,7 @@
 /* Responsive Navbar */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Hidden by default on small screens */
+        display: none; 
         flex-direction: column;
         width: 100%;
         position: absolute;

@@ -33,7 +33,7 @@ body {
     padding: 3rem 0;
     text-align: center;
     position: relative;
-    overflow: hidden; /* To contain pseudo-elements if needed */
+    overflow: hidden; 
 }
 
 .hero::after, .page-header::after {
@@ -54,6 +54,21 @@ body {
     border: 5px solid var(--white);
     margin-bottom: 1rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.profile-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 5px solid var(--white);
+    margin: 0 auto 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--primary);
 }
 
 h1 {
@@ -144,7 +159,6 @@ h1 {
     margin-top: 3rem;
 }
 
-
 /* Skills Page Specific Styles */
 .skills-grid {
     display: grid;
@@ -176,7 +190,7 @@ h1 {
     border-radius: 4px;
     margin-top: 1rem;
     overflow: hidden;
-    position: relative; /* Needed for ::after positioning */
+    position: relative; 
 }
 
 /* Initial state for skill bar animation */
@@ -216,7 +230,7 @@ h1 {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
-    padding-bottom: 20px; /* Space for the line at the bottom */
+    padding-bottom: 20px; 
 }
 
 .timeline::before {
@@ -260,15 +274,14 @@ h1 {
 }
 
 .timeline-item:nth-child(odd)::after {
-    right: -10px; /* Adjust to sit on the line */
+    right: -10px; 
     transform: translateX(50%);
 }
 
 .timeline-item:nth-child(even)::after {
-    left: -10px; /* Adjust to sit on the line */
+    left: -10px; 
     transform: translateX(-50%);
 }
-
 
 .timeline-content {
     padding: 20px;
@@ -437,7 +450,7 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-family: inherit;
-    box-sizing: border-box; /* Ensures padding doesn't increase width */
+    box-sizing: border-box; 
 }
 
 .contact-form textarea {
